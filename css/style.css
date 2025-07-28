@@ -937,6 +937,30 @@ p {
     color: var(--golden-kiara);
     border: 1px solid var(--golden-kiara);
 }
+.footer-logo-image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-logo-image {
+    height: 35px;
+  }
+}
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
