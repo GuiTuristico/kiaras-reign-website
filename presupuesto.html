@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Presupuesto | Kiaras Reign - Productos Premium para Bebés</title>
+    <meta name="description" content="Solicita un presupuesto personalizado para productos premium y ecológicos para bebés. Asesoramiento experto y precios especiales en Kiaras Reign.">
+    <meta name="keywords" content="presupuesto bebés, productos ecológicos personalizados, asesoramiento infantil, Rey León, presupuesto personalizado">
+    <meta name="author" content="Kiaras Reign Baby Shop">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Solicitar Presupuesto | Kiaras Reign">
+    <meta property="og:description" content="Obtén un presupuesto personalizado para productos premium y ecológicos para bebés">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kiarasreign.com/presupuesto">
+    <meta property="og:image" content="https://kiarasreign.com/images/presupuesto-og.jpg">
+    
+    <link rel="canonical" href="https://kiarasreign.com/presupuesto">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Principal -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+  <div class="logo-icon">
+    <img src="images/logo.png" alt="Kiaras Reign - El Reino de la Pequeña Kiara" class="logo-image">
+  </div>
+</div>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">🏠 Inicio</a></li>
+                    <li><a href="productos.html" class="nav-link">🛍️ Productos</a></li>
+                    <li><a href="presupuesto.html" class="nav-link active">💰 Presupuesto</a></li>
+                    <li><a href="contacto.html" class="nav-link">📞 Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Hero de Presupuesto -->
+        <section class="budget-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="section-badge">💰 Presupuesto Personalizado</div>
+                    <h1 class="hero-title">
+                        Crea el Reino Perfecto para tu 
+                        <span class="text-gradient">Pequeño Rey</span>
+                    </h1>
+                    <p class="hero-description">
+                        Nuestros expertos en productos infantiles te ayudarán a crear la selección 
+                        perfecta de productos ecológicos y premium para tu bebé. Recibe un presupuesto 
+                        personalizado con recomendaciones especializadas y precios exclusivos.
+                    </p>
+                    <div class="hero-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">👨‍⚕️</span>
+                            <span>Asesoramiento Experto</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">💎</span>
+                            <span>Precios Especiales</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🎁</span>
+                            <span>Regalos Incluidos</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🚚</span>
+                            <span>Envío Gratuito</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Presupuesto -->
+        <section class="budget-form-section">
+            <div class="container">
+                <div class="form-layout">
+                    <div class="form-container">
+                        <div class="form-header">
+                            <h2 class="form-title">Solicitud de Presupuesto Personalizado</h2>
+                            <p class="form-description">
+                                Completa este formulario y nuestros expertos te contactarán en menos de 24 horas 
+                                con un presupuesto detallado y recomendaciones personalizadas para tu pequeño rey.
+                            </p>
+                        </div>
+
+                        <form id="budgetForm" class="budget-form" novalidate>
+                            <!-- Información Personal -->
+                            <div class="form-section">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <span class="section-icon">👨‍👩‍👶</span>
+                                        Información Familiar
+                                    </h3>
+                                    <p class="section-description">Cuéntanos sobre tu familia para personalizar nuestras recomendaciones</p>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="nombre" class="form-label required">Nombre Completo</label>
+                                        <input type="text" id="nombre" name="nombre" class="form-input" 
+                                               required minlength="2" maxlength="50"
+                                               placeholder="Tu nombre completo"
+                                               autocomplete="name">
+                                        <div class="form-error" id="nombre-error"></div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="email" class="form-label required">Correo Electrónico</label>
+                                        <input type="email" id="email" name="email" class="form-input" 
+                                               required 
+                                               placeholder="tu@email.com"
+                                               autocomplete="email">
+                                        <div class="form-error" id="email-error"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="telefono" class="form-label required">Teléfono de Contacto</label>
+                                        <input type="tel" id="telefono" name="telefono" class="form-input" 
+                                               required pattern="[0-9+\-\s\(\)]+" 
+                                               placeholder="+34 (91) 123-4567"
+                                               autocomplete="tel">
+                                        <div class="form-error" id="telefono-error"></div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="ciudad" class="form-label">Ciudad</label>
+                                        <input type="text" id="ciudad" name="ciudad" class="form-input" 
+                                               placeholder="Tu ciudad"
+                                               autocomplete="address-level2">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Información del Bebé -->
+                            <div class="form-section">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <span class="section-icon">👶</span>
+                                        Información del Pequeño Rey
+                                    </h3>
+                                    <p class="section-description">Detalles sobre tu bebé para recomendaciones precisas</p>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="nombre-bebe" class="form-label">Nombre del Bebé</label>
+                                        <input type="text" id="nombre-bebe" name="nombre-bebe" class="form-input" 
+                                               placeholder="Nombre de tu pequeño rey (opcional)">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="edad-bebe" class="form-label required">Edad del Bebé</label>
+                                        <select id="edad-bebe" name="edad-bebe" class="form-select" required>
+                                            <option value="">Selecciona la edad</option>
+                                            <option value="esperando">Esperando bebé</option>
+                                            <option value="0-3-meses">0-3 meses</option>
+                                            <option value="3-6-meses">3-6 meses</option>
+                                            <option value="6-12-meses">6-12 meses</option>
+                                            <option value="12-18-meses">12-18 meses</option>
+                                            <option value="18-24-meses">18-24 meses</option>
+                                            <option value="2-3-anos">2-3 años</option>
+                                        </select>
+                                        <div class="form-error" id="edad-bebe-error"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="genero-bebe" class="form-label">Género</label>
+                                        <select id="genero-bebe" name="genero-bebe" class="form-select">
+                                            <option value="">Selecciona género</option>
+                                            <option value="nino">Niño</option>
+                                            <option value="nina">Niña</option>
+                                            <option value="sorpresa">Sorpresa</option>
+                                            <option value="no-especificar">Prefiero no especificar</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="necesidades-especiales" class="form-label">Necesidades Especiales</label>
+                                        <select id="necesidades-especiales" name="necesidades-especiales" class="form-select">
+                                            <option value="">Sin necesidades especiales</option>
+                                            <option value="alergias">Alergias conocidas</option>
+                                            <option value="piel-sensible">Piel muy sensible</option>
+                                            <option value="prematuridad">Bebé prematuro</option>
+                                            <option value="otras">Otras necesidades</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Categorías de Productos -->
+                            <div class="form-section">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <span class="section-icon">🛍️</span>
+                                        Productos de Interés
+                                    </h3>
+                                    <p class="section-description">Selecciona las categorías que más te interesan (puedes elegir varias)</p>
+                                </div>
+                                
+                                <div class="checkbox-grid">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="cat-peluches" name="categorias[]" value="peluches">
+                                        <label for="cat-peluches" class="checkbox-label">
+                                            <span class="checkbox-icon">🧸</span>
+                                            <div class="checkbox-content">
+                                                <div class="checkbox-title">Peluches Orgánicos</div>
+                                                <div class="checkbox-description">Compañeros suaves y seguros</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="cat-ropa" name="categorias[]" value="ropa">
+                                        <label for="cat-ropa" class="checkbox-label">
+                                            <span class="checkbox-icon">👕</span>
+                                            <div class="checkbox-content">
+                                                <div class="checkbox-title">Ropa Ecológica</div>
+                                                <div class="checkbox-description">Vestimenta natural y cómoda</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="cat-alimentacion" name="categorias[]" value="alimentacion">
+                                        <label for="cat-alimentacion" class="checkbox-label">
+                                            <span class="checkbox-icon">🍼</span>
+                                            <div class="checkbox-content">
+                                                <div class="checkbox-title">Alimentación Natural</div>
+                                                <div class="checkbox-description">Productos libres de químicos</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="cat-descanso" name="categorias[]" value="descanso">
+                                        <label for="cat-descanso" class="checkbox-label">
+                                            <span class="checkbox-icon">🛏️</span>
+                                            <div class="checkbox-content">
+                                                <div class="checkbox-title">Descanso Seguro</div>
+                                                <div class="checkbox-description">Sueños tranquilos y reparadores</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="cat-juguetes" name="categorias[]" value="juguetes">
+                                        <label for="cat-juguetes" class="checkbox-label">
+                                            <span class="checkbox-icon">🎮</span>
+                                            <div class="checkbox-content">
+                                                <div class="checkbox-title">Juguetes Educativos</div>
+                                                <div class="checkbox-description">Aprendizaje y diversión</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="cat-cuidado" name="categorias[]" value="cuidado">
+                                        <label for="cat-cuidado" class="checkbox-label">
+                                            <span class="checkbox-icon">🛁</span>
+                                            <div class="checkbox-content">
+                                                <div class="checkbox-title">Cuidado Personal</div>
+                                                <div class="checkbox-description">Higiene natural y segura</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Presupuesto y Preferencias -->
+                            <div class="form-section">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <span class="section-icon">💰</span>
+                                        Presupuesto y Preferencias
+                                    </h3>
+                                    <p class="section-description">Ayúdanos a personalizar nuestras recomendaciones según tus preferencias</p>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="presupuesto" class="form-label required">Presupuesto Aproximado</label>
+                                        <select id="presupuesto" name="presupuesto" class="form-select" required>
+                                            <option value="">Selecciona tu presupuesto</option>
+                                            <option value="0-100">€0 - €100</option>
+                                            <option value="100-250">€100 - €250</option>
+                                            <option value="250-500">€250 - €500</option>
+                                            <option value="500-1000">€500 - €1,000</option>
+                                            <option value="1000-2000">€1,000 - €2,000</option>
+                                            <option value="2000+">Más de €2,000</option>
+                                        </select>
+                                        <div class="form-error" id="presupuesto-error"></div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="urgencia" class="form-label">¿Cuándo necesitas los productos?</label>
+                                        <select id="urgencia" name="urgencia" class="form-select">
+                                            <option value="no-urgente">Sin prisa</option>
+                                            <option value="1-semana">En 1 semana</option>
+                                            <option value="2-semanas">En 2 semanas</option>
+                                            <option value="1-mes">En 1 mes</option>
+                                            <option value="3-meses">En 3 meses</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="prioridades" class="form-label">Prioridades Principales</label>
+                                    <div class="radio-group">
+                                        <div class="radio-item">
+                                            <input type="radio" id="prioridad-eco" name="prioridades" value="ecologico">
+                                            <label for="prioridad-eco" class="radio-label">
+                                                <span class="radio-icon">🌿</span>
+                                                <span>Máxima sostenibilidad ecológica</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio-item">
+                                            <input type="radio" id="prioridad-seguridad" name="prioridades" value="seguridad">
+                                            <label for="prioridad-seguridad" class="radio-label">
+                                                <span class="radio-icon">🛡️</span>
+                                                <span>Máxima seguridad y certificaciones</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio-item">
+                                            <input type="radio" id="prioridad-calidad" name="prioridades" value="calidad">
+                                            <label for="prioridad-calidad" class="radio-label">
+                                                <span class="radio-icon">👑</span>
+                                                <span>Máxima calidad premium</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio-item">
+                                            <input type="radio" id="prioridad-precio" name="prioridades" value="precio">
+                                            <label for="prioridad-precio" class="radio-label">
+                                                <span class="radio-icon">💰</span>
+                                                <span>Mejor relación calidad-precio</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Información Adicional -->
+                            <div class="form-section">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <span class="section-icon">💬</span>
+                                        Información Adicional
+                                    </h3>
+                                    <p class="section-description">¿Hay algo más que deberíamos saber para crear el presupuesto perfecto?</p>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="comentarios" class="form-label">Comentarios y Solicitudes Especiales</label>
+                                    <textarea id="comentarios" name="comentarios" class="form-textarea" 
+                                              rows="5" maxlength="1000"
+                                              placeholder="Cuéntanos sobre preferencias específicas, alergias, ocasiones especiales, o cualquier otra información que nos ayude a personalizar tu presupuesto..."></textarea>
+                                    <div class="character-count">
+                                        <span id="char-count">0</span>/1000 caracteres
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" id="newsletter" name="newsletter" value="si">
+                                        <span class="checkmark"></span>
+                                        <span class="checkbox-text">
+                                            Quiero recibir consejos exclusivos sobre productos para bebés y ofertas especiales del Reino de Kiara
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="checkbox-container required">
+                                        <input type="checkbox" id="privacidad" name="privacidad" value="si" required>
+                                        <span class="checkmark"></span>
+                                        <span class="checkbox-text">
+                                            He leído y acepto la <a href="#" class="link">Política de Privacidad</a> y los 
+                                            <a href="#" class="link">Términos y Condiciones</a> de Kiaras Reign
+                                        </span>
+                                    </label>
+                                    <div class="form-error" id="privacidad-error"></div>
+                                </div>
+                            </div>
+
+                            <!-- Botón de Envío -->
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary-large" id="submit-btn">
+                                    <span class="btn-text">🦁 Solicitar Presupuesto Personalizado</span>
+                                    <span class="btn-loading" style="display: none;">
+                                        <span class="spinner"></span>
+                                        Procesando...
+                                    </span>
+                                </button>
+                                <p class="submit-note">
+                                    📞 Te contactaremos en menos de 24 horas con tu presupuesto personalizado y 
+                                    recomendaciones expertas para tu pequeño rey.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Información Lateral -->
+                    <div class="form-sidebar">
+                        <div class="sidebar-card">
+                            <div class="card-header">
+                                <h3 class="card-title">
+                                    <span class="card-icon">👨‍⚕️</span>
+                                    Asesoramiento Experto
+                                </h3>
+                            </div>
+                            <div class="card-content">
+                                <p>
+                                    Nuestro equipo de especialistas en productos infantiles tiene más de 10 años 
+                                    de experiencia ayudando a familias a encontrar los productos perfectos para sus bebés.
+                                </p>
+                                <ul class="card-list">
+                                    <li>✓ Certificados en seguridad infantil</li>
+                                    <li>✓ Expertos en productos ecológicos</li>
+                                    <li>✓ Asesoramiento personalizado</li>
+                                    <li>✓ Seguimiento post-venta</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <div class="card-header">
+                                <h3 class="card-title">
+                                    <span class="card-icon">🎁</span>
+                                    Ventajas Exclusivas
+                                </h3>
+                            </div>
+                            <div class="card-content">
+                                <ul class="benefits-list">
+                                    <li>
+                                        <span class="benefit-icon">💎</span>
+                                        <div>
+                                            <strong>Precios Especiales</strong>
+                                            <p>Descuentos exclusivos en tu presupuesto personalizado</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">🚚</span>
+                                        <div>
+                                            <strong>Envío Gratuito</strong>
+                                            <p>Sin coste adicional en pedidos superiores a €50</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">🔄</span>
+                                        <div>
+                                            <strong>Garantía Total</strong>
+                                            <p>30 días de garantía de satisfacción</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="benefit-icon">🎁</span>
+                                        <div>
+                                            <strong>Regalo Sorpresa</strong>
+                                            <p>Regalo especial incluido en tu primer pedido</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <div class="card-header">
+                                <h3 class="card-title">
+                                    <span class="card-icon">📞</span>
+                                    ¿Necesitas Ayuda?
+                                </h3>
+                            </div>
+                            <div class="card-content">
+                                <p>
+                                    Nuestro equipo está disponible para ayudarte con cualquier pregunta 
+                                    sobre productos o el proceso de presupuesto.
+                                </p>
+                                <div class="contact-info">
+                                    <div class="contact-item">
+                                        <span class="contact-icon">📞</span>
+                                        <div>
+                                            <strong>Teléfono</strong>
+                                            <p>+34 (91) 123-4567</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="contact-icon">📧</span>
+                                        <div>
+                                            <strong>Email</strong>
+                                            <p>presupuestos@kiarasreign.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="contact-icon">💬</span>
+                                        <div>
+                                            <strong>Chat en Vivo</strong>
+                                            <p>Lun-Vie 9:00-18:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">👑</div>
+                        <div class="logo-text">
+                            <h3>Kiaras Reign</h3>
+                            <span>El Reino de la Pequeña Kiara</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Productos premium y ecológicos para bebés, inspirados en los valores 
+                        de El Rey León. Calidad, seguridad y sostenibilidad para los pequeños reyes.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">📘 Facebook</a>
+                        <a href="#" class="social-link">📷 Instagram</a>
+                        <a href="#" class="social-link">🐦 Twitter</a>
+                        <a href="#" class="social-link">📺 YouTube</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Navegación Rápida</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">🏠 Inicio</a></li>
+                        <li><a href="productos.html">🛍️ Productos</a></li>
+                        <li><a href="presupuesto.html">💰 Presupuesto</a></li>
+                        <li><a href="contacto.html">📞 Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Categorías del Reino</h4>
+                    <ul class="footer-links">
+                        <li><a href="productos.html">🧸 Peluches Orgánicos</a></li>
+                        <li><a href="productos.html">👕 Ropa Ecológica</a></li>
+                        <li><a href="productos.html">🍼 Alimentación Natural</a></li>
+                        <li><a href="productos.html">🛏️ Descanso Seguro</a></li>
+                        <li><a href="productos.html">🎮 Juguetes Educativos</a></li>
+                        <li><a href="productos.html">🛁 Cuidado Personal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Información Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">📋 Política de Privacidad</a></li>
+                        <li><a href="#">📜 Términos y Condiciones</a></li>
+                        <li><a href="#">⚖️ Aviso Legal</a></li>
+                        <li><a href="#">🔄 Política de Devoluciones</a></li>
+                        <li><a href="#">🚚 Envíos y Entregas</a></li>
+                        <li><a href="#">🌿 Compromiso Ecológico</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Kiaras Reign - El Reino de la Pequeña Kiara. Todos los derechos reservados.</p>
+                    <div class="footer-badges">
+                        <span class="badge">🌿 100% Ecológico</span>
+                        <span class="badge">🛡️ Productos Seguros</span>
+                        <span class="badge">👑 Calidad Premium</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Validación y envío del formulario
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('budgetForm');
+            const submitBtn = document.getElementById('submit-btn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoading = submitBtn.querySelector('.btn-loading');
+            
+            // Contador de caracteres
+            const comentarios = document.getElementById('comentarios');
+            const charCount = document.getElementById('char-count');
+            
+            comentarios.addEventListener('input', function() {
+                charCount.textContent = this.value.length;
+            });
+            
+            // Validación del formulario
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (validateForm()) {
+                    submitForm();
+                }
+            });
+            
+            function validateForm() {
+                let isValid = true;
+                
+                // Validar nombre
+                const nombre = document.getElementById('nombre');
+                if (!nombre.value.trim() || nombre.value.length < 2) {
+                    showError('nombre-error', 'El nombre debe tener al menos 2 caracteres');
+                    isValid = false;
+                } else {
+                    hideError('nombre-error');
+                }
+                
+                // Validar email
+                const email = document.getElementById('email');
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email.value)) {
+                    showError('email-error', 'Por favor, introduce un email válido');
+                    isValid = false;
+                } else {
+                    hideError('email-error');
+                }
+                
+                // Validar teléfono
+                const telefono = document.getElementById('telefono');
+                const telefonoRegex = /^[0-9+\-\s\(\)]+$/;
+                if (!telefono.value.trim() || !telefonoRegex.test(telefono.value)) {
+                    showError('telefono-error', 'Por favor, introduce un teléfono válido');
+                    isValid = false;
+                } else {
+                    hideError('telefono-error');
+                }
+                
+                // Validar edad del bebé
+                const edadBebe = document.getElementById('edad-bebe');
+                if (!edadBebe.value) {
+                    showError('edad-bebe-error', 'Por favor, selecciona la edad del bebé');
+                    isValid = false;
+                } else {
+                    hideError('edad-bebe-error');
+                }
+                
+                // Validar presupuesto
+                const presupuesto = document.getElementById('presupuesto');
+                if (!presupuesto.value) {
+                    showError('presupuesto-error', 'Por favor, selecciona un rango de presupuesto');
+                    isValid = false;
+                } else {
+                    hideError('presupuesto-error');
+                }
+                
+                // Validar política de privacidad
+                const privacidad = document.getElementById('privacidad');
+                if (!privacidad.checked) {
+                    showError('privacidad-error', 'Debes aceptar la política de privacidad para continuar');
+                    isValid = false;
+                } else {
+                    hideError('privacidad-error');
+                }
+                
+                return isValid;
+            }
+            
+            function showError(errorId, message) {
+                const errorElement = document.getElementById(errorId);
+                errorElement.textContent = message;
+                errorElement.style.display = 'block';
+                
+                // Añadir clase de error al input
+                const input = errorElement.previousElementSibling;
+                if (input) {
+                    input.classList.add('error');
+                }
+            }
+            
+            function hideError(errorId) {
+                const errorElement = document.getElementById(errorId);
+                errorElement.style.display = 'none';
+                
+                // Remover clase de error del input
+                const input = errorElement.previousElementSibling;
+                if (input) {
+                    input.classList.remove('error');
+                }
+            }
+            
+            function submitForm() {
+                // Mostrar estado de carga
+                btnText.style.display = 'none';
+                btnLoading.style.display = 'flex';
+                submitBtn.disabled = true;
+                
+                // Simular envío del formulario
+                setTimeout(() => {
+                    // Mostrar mensaje de éxito
+                    showSuccessMessage();
+                    
+                    // Resetear botón
+                    btnText.style.display = 'flex';
+                    btnLoading.style.display = 'none';
+                    submitBtn.disabled = false;
+                    
+                    // Resetear formulario
+                    form.reset();
+                    charCount.textContent = '0';
+                }, 2000);
+            }
+            
+            function showSuccessMessage() {
+                const successMessage = document.createElement('div');
+                successMessage.className = 'success-message';
+                successMessage.innerHTML = `
+                    <div class="success-content">
+                        <div class="success-icon">🎉</div>
+                        <h3>¡Presupuesto Solicitado con Éxito!</h3>
+                        <p>
+                            Gracias por confiar en Kiaras Reign. Nuestro equipo de expertos revisará 
+                            tu solicitud y te contactará en menos de 24 horas con un presupuesto 
+                            personalizado y recomendaciones especiales para tu pequeño rey.
+                        </p>
+                        <div class="success-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📧</span>
+                                <span>Recibirás una confirmación por email</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📞</span>
+                                <span>Te llamaremos para personalizar tu presupuesto</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">🎁</span>
+                                <span>Incluiremos ofertas especiales exclusivas</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="this.parentElement.parentElement.remove()">
+                            Entendido
+                        </button>
+                    </div>
+                `;
+                
+                document.body.appendChild(successMessage);
+                
+                // Auto-remover después de 10 segundos
+                setTimeout(() => {
+                    if (successMessage.parentElement) {
+                        successMessage.remove();
+                    }
+                }, 10000);
+            }
+        });
+
+        // Destacar página actual en navegación
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
