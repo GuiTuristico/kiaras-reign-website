@@ -286,29 +286,7 @@ p {
     line-height: 1;
 }
 .logo-image {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  display: block;
-}
-
-/* Para pantallas móviles */
-@media (max-width: 768px) {
-  .logo-image {
-    width: 50px;
-    height: 50px;
-  }
-}
-
-/* Para pantallas grandes */
-@media (min-width: 1200px) {
-  .logo-image {
-    width: 70px;
-    height: 70px;
-
-    /* Logo personalizado */
-.logo-image {
-  height: 50px;
+  height: 70px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -317,19 +295,44 @@ p {
 .logo {
   display: flex;
   align-items: center;
+  gap: var(--spacing-sm);
 }
 
-/* Responsive del logo */
+.logo-text .tagline {
+  font-size: var(--font-size-sm);
+  color: var(--color-brown-savana);
+  font-weight: 500;
+  font-style: italic;
+}
+
 @media (max-width: 768px) {
   .logo-image {
-    height: 40px;
+    height: 50px;
+  }
+  
+  .logo {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-xs);
+  }
+  
+  .logo-text .tagline {
+    font-size: var(--font-size-xs);
   }
 }
 
 @media (min-width: 1200px) {
   .logo-image {
-    height: 60px;
+    height: 80px;
   }
+  
+  .logo-text .tagline {
+    font-size: var(--font-size-md);
+  }
+}
+
+.logo h1 {
+  display: none;
 }
 
 .tagline {
