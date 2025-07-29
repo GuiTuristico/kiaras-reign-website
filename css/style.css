@@ -286,7 +286,7 @@ p {
     line-height: 1;
 }
 .logo-image {
-  height: 70px;
+  height: 100px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -938,7 +938,7 @@ p {
     border: 1px solid var(--golden-kiara);
 }
 .footer-logo-image {
-  height: 40px;
+  height: 70px;
   width: auto;
   object-fit: contain;
   display: block;
