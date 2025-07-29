@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body>
     <!-- Header Principal -->
@@ -39,7 +39,7 @@
 </div>
 
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link active"><House /> Inicio</a></li>
+                    <li><a href="index.html" class="nav-link"><i data-lucide="home"></i> Inicio</a></li>
                     <li><a href="productos.html" class="nav-link"><Shirt /> Productos</a></li>
                     <li><a href="presupuesto.html" class="nav-link"><PiggyBank />Presupuesto</a></li>
                     <li><a href="contacto.html" class="nav-link"><Phone /> Contacto</a></li>
@@ -354,7 +354,11 @@
                 item.style.animationDelay = `${index * 0.5}s`;
             });
         });
-
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    lucide.createIcons();
+  });
+</script>
 </body>
 </html>
 
