@@ -20,7 +20,7 @@ body {
 
 /* ===== VARIABLES CSS ===== */
 :root {
-    /* Colores Primarios - Basados en el prototipo */
+    /* Colores Primarios - Basados en mi prototipo Figma */
     --brown-savana: #4A2C00;
     --cream: #D4B28C;
     --golden-kiara: #E09A4F;
@@ -286,7 +286,7 @@ p {
     line-height: 1;
 }
 .logo-image {
-  height: 70px;
+  height: 100px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -1022,7 +1022,7 @@ p {
          height: 100%;
          object-fit: cover; 
          border-radius: 20px; 
-    
+    }
     .hero-buttons {
         flex-direction: column;
         align-items: center;
