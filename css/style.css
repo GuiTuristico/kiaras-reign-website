@@ -758,13 +758,39 @@ p {
 }
 
 .product-image .image-placeholder {
-    height: 200px;
-    background: linear-gradient(135deg, var(--smooth-grey), var(--cream));
-    border-radius: var(--radius-lg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--cream);
+  height: 200px;
+  background: linear-gradient(135deg, #F9F5F0, #FDF8F3); 
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--cream);
+  
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center;
+  text-align: center;     
+  padding: var(--spacing-md); 
+  overflow: hidden;       
+  transition: background 0.3s ease; 
+}
+
+.product-card:hover .product-image .image-placeholder {
+  background: linear-gradient(135deg, #FDF8F3, #F9F1E6);
+}
+
+.product-image .product-icon {
+  font-size: var(--text-5xl); 
+  margin-bottom: var(--spacing-sm); 
+  color: var(--brown-savana);
+  filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.1));
+}
+
+.product-image .image-placeholder p {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 500;
+  color: var(--text-secondary);
+  line-height: 1.3;
+  margin: 0; 
 }
 
 .teddy-bear-image {
