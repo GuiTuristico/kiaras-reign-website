@@ -317,7 +317,7 @@ p {
   }
   
   .logo-text .tagline {
-    font-size: var(--font-size-xs);
+    font-size: var(--text-xs); 
   }
 }
 
@@ -327,7 +327,7 @@ p {
   }
   
   .logo-text .tagline {
-    font-size: var(--font-size-md);
+    font-size: var(--text-base); 
   }
 }
 
