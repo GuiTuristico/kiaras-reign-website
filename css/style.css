@@ -788,6 +788,75 @@ p {
      border-radius: 20px; 
 }
 
+.simba-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover; 
+     border-radius: 20px; 
+}
+
+.nala-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover; 
+     border-radius: 20px; 
+}
+
+.timón-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover; 
+     border-radius: 20px; 
+}
+
+.body-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover; 
+     border-radius: 20px; 
+}
+
+.vestido-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover; 
+     border-radius: 20px; 
+}
+
+.biberón-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover; 
+     border-radius: 20px; 
+}
+
+.sabana-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover; 
+     border-radius: 20px; 
+}
+
+.móvil-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover; 
+     border-radius: 20px; 
+}
+
+.puzzle-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover; 
+     border-radius: 20px; 
+}
+
+.piano-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover; 
+     border-radius: 20px; 
+}
 
 .product-icon {
     font-size: var(--text-5xl);
