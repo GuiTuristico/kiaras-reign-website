@@ -644,6 +644,13 @@ p {
     position: relative;
 }
 
+.about-main-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover; 
+     border-radius: 20px; 
+}
+
 .image-placeholder {
     width: 100%;
     height: 400px;
@@ -760,12 +767,27 @@ p {
     border: 1px solid var(--cream);
 }
 
-.about-main-image {
+.teddy-bear-image {
      width: 100%;
      height: 100%;
      object-fit: cover; 
      border-radius: 20px; 
 }
+
+.clothes-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover; 
+     border-radius: 20px; 
+}
+
+.food-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover; 
+     border-radius: 20px; 
+}
+
 
 .product-icon {
     font-size: var(--text-5xl);
@@ -956,6 +978,36 @@ p {
   align-items: center;
   gap: var(--spacing-sm);
   margin-bottom: var(--spacing-md);
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--spacing-md); 
+  align-items: center;
+  justify-content: center; 
+}
+
+.social-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;  
+  height: 44px; 
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: var(--cream); 
+  border: 1px solid var(--cream);
+  border-radius: 50%; 
+  text-decoration: none;
+  font-size: var(--text-lg); 
+  transition: all var(--transition-normal);
+}
+
+.social-icon-link:hover {
+  background-color: var(--golden-kiara);
+  color: var(--text-white);
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: var(--shadow-md);
+  border-color: var(--golden-kiara);
 }
 
 @media (max-width: 768px) {
