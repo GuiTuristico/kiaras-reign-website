@@ -1379,7 +1379,7 @@ p {
 
 /* ===== FOOTER ===== */
 .main-footer {
-    background: linear-gradient(135deg, var(--brown-savana), #3A2000);
+    background: linear-gradient(135deg, #FDF2F8 0%, #F3E8FF 50%, #FEF3C7 100%);
     color: var(--cream);
     padding: var(--spacing-3xl) 0 var(--spacing-lg);
 }
