@@ -316,7 +316,7 @@ p {
     font-family: var(--font-heading);
     font-size: var(--text-2xl);
     font-weight: 700;
-    color: var(--brown-savana);
+    color: var(--cream);
     margin: 0;
     line-height: 1;
 }
@@ -1977,16 +1977,6 @@ p {
     }
 }
 
-/* ===== MODO OSCURO (OPCIONAL) ===== */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text-primary: #F5F5F5;
-        --text-secondary: #D4B28C;
-        --text-light: #B8A082;
-        --bg-primary: #1A1A1A;
-        --bg-secondary: #2D2D2D;
-        --bg-accent: #3A3A3A;
-    }
 }
 
 /* ===== PRINT STYLES ===== */
