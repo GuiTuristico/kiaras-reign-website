@@ -2178,3 +2178,33 @@ body {
   background: linear-gradient(135deg, #FDF2F8 0%, #F3E8FF 50%, #FEF3C7 100%) !important;
   color: #4A2C00 !important;
 }
+
+.visit-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+.map-card { grid-column: 1; grid-row: 1; }
+.showroom-card { grid-column: 2; grid-row: 1; }
+.directions-card { grid-column: 1; grid-row: 2; }
+.booking-card { grid-column: 2; grid-row: 2; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .visit-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    
+    .map-card, .showroom-card, .directions-card, .booking-card {
+        grid-column: 1;
+    }
+    
+    .map-card { grid-row: 1; }
+    .showroom-card { grid-row: 2; }
+    .directions-card { grid-row: 3; }
+    .booking-card { grid-row: 4; }
+}
