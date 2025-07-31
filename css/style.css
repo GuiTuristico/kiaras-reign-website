@@ -276,7 +276,7 @@ p {
 
 /* ===== HEADER Y NAVEGACIÓN ===== */
 .main-header {
-    background: rgba(254, 254, 254, 0.95);
+    background: linear-gradient(135deg, var(--brown-savana), #3D2200);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--cream);
     position: fixed;
@@ -1414,7 +1414,7 @@ p {
 
 /* ===== FOOTER ===== */
 .main-footer {
-    background: linear-gradient(135deg, #FDF2F8 0%, #F3E8FF 50%, #FEF3C7 100%);
+    background: linear-gradient(135deg, var(--brown-savana), #3D2200);
     color: var(--cream);
     padding: var(--spacing-3xl) 0 var(--spacing-lg);
 }
