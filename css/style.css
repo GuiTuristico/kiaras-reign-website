@@ -1977,6 +1977,18 @@ p {
     }
 }
 
+/* ===== MODO OSCURO (OPCIONAL) ===== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-primary: #F5F5F5;
+        --text-secondary: #D4B28C;
+        --text-light: #B8A082;
+        --bg-primary: #1A1A1A;
+        --bg-secondary: #2D2D2D;
+        --bg-accent: #3A3A3A;
+    }
+}
+
 /* ===== PRINT STYLES ===== */
 @media print {
     .main-header,
@@ -2030,4 +2042,17 @@ a {
 
 a:hover {
     color: var(--brown-savana);
+}
+
+:root {
+  color-scheme: light only;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: linear-gradient(135deg, #FDF2F8 0%, #F3E8FF 50%, #FEF3C7 100%) !important;
+  color: #4A2C00 !important;
 }
