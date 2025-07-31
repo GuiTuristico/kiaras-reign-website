@@ -1437,9 +1437,11 @@ p {
     margin-bottom: var(--spacing-2xl);
 }
 
-.footer-section {
+.footer-section h4 {
     display: flex;
     flex-direction: column;
+    color: var(--white-cloud) !important;
+    font-weight: 600;
 }
 
 .footer-logo {
@@ -1507,6 +1509,7 @@ p {
     font-family: var(--font-heading);
     font-weight: 600;
 }
+
 
 .footer-links {
     list-style: none;
