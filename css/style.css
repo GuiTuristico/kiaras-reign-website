@@ -36,7 +36,7 @@ body {
     --medium-grey: #8B8B8B;
     
     /* Colores de Texto */
-    --text-primary: #2D1810;
+    --text-primary: #4A2C00;;
     --text-secondary: #5D4E37;
     --text-light: #8B7355;
     --text-white: #FFFFFF;
@@ -88,6 +88,41 @@ body {
     --radius-lg: 16px;
     --radius-xl: 24px;
     --radius-full: 9999px;
+
+    
+}
+/* Títulos principales con colores cálidos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--brown-savana) !important;  /* Forzar color cálido */
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Título principal del hero */
+.hero-title, .page-title {
+    color: var(--brown-savana) !important;
+}
+
+/* Títulos de sección */
+.section-title {
+    color: var(--brown-savana) !important;
+}
+
+/* Texto de formularios */
+.form-label {
+    color: var(--brown-savana) !important;
+} 
+
+/* Texto del cuerpo más cálido */
+p, .form-description, .section-description {
+    color: var(--text-secondary) !important;
+}
+
+/* Asegurar que el texto no sea negro */
+body {
+    color: var(--brown-savana);
 }
 
 /* ===== TIPOGRAFÍA ===== */
@@ -1988,3 +2023,23 @@ p {
     }
 }
 
+.budget-title, .contact-title, .products-title {
+    color: var(--brown-savana) !important;
+}
+
+.form-section h3, .form-section h4 {
+    color: var(--brown-savana) !important;
+}
+
+.feature-text, .benefit-text {
+    color: var(--text-secondary) !important;
+}
+
+/* Asegurar que los enlaces mantengan buen contraste */
+a {
+    color: var(--golden-kiara);
+}
+
+a:hover {
+    color: var(--brown-savana);
+}
